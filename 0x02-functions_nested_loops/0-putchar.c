@@ -3,7 +3,7 @@
 /**
  * _putChar - Prints "_putchar" followed by a new line.
  *
- * Description: This function prints the string "_putchar" 
+ * Description: This function prints the string "_putchar", 
  * followed by a new line.
  *
  * Return: Always 0 (Success)

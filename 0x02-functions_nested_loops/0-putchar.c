@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-int _putchar(void) 
+int _putChar(void) 
 {
 printf(" _putchar\n");
 return 0;
@@ -16,12 +16,12 @@ return 0;
 /**
  * main - Entry point of the program.
  *
- * Description: This function calls the _putchar function to print "_putchar".
+ * Description: This function calls the _putchar function to print "_putChar".
  *
  * Return: Always 0 (Success)
  */
 int main(void) 
 {
-_putchar();
+_putChar();
 return 0;
 }

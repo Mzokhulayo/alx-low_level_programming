@@ -2,10 +2,10 @@
 
 void print_alphabet()
 {
-char 1st_letter = 'a';
-while (1st_letter <='z') {
-	_putChar(1st_letter);
-	1st_letter ++;
+char first_letter = 'a';
+while (first_letter <='z') {
+	_putChar(first_letter);
+	first_letter ++;
 	}
 	_putChar('\n');
   }

@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+void print_alphabet(void);
+
+
 void print_alphabet()
 {
 char first_letter = 'a';
@@ -9,8 +12,6 @@ while (first_letter <='z') {
 	}
 	putchar('\n');
   }
-
-void print_alphabet(void);
 
 int main(void) 
 {

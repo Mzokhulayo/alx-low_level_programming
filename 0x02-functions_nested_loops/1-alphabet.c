@@ -10,6 +10,8 @@ while (first_letter <='z') {
 	putchar('\n');
   }
 
+void print_alphabet(void);
+
 int main(void) 
 {
 print_alphabet();

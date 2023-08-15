@@ -4,10 +4,10 @@ void print_alphabet()
 {
 char first_letter = 'a';
 while (first_letter <='z') {
-	_putChar(first_letter);
+	putchar(first_letter);
 	first_letter ++;
 	}
-	_putChar('\n');
+	putchar('\n');
   }
 
 int main(void) 

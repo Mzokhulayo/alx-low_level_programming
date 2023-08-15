@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _putchar - Prints "_putchar" followed by a new line.
+ * _putChar - Prints "_putchar" followed by a new line.
  *
  * Description: This function prints the string "_putchar" followed by a new line.
  *
@@ -9,8 +9,8 @@
  */
 int _putChar(void) 
 {
-printf(" _putchar\n");
-return 0;
+printf("_putchar\n");
+return (0);
 }
 
 /**
@@ -23,5 +23,5 @@ return 0;
 int main(void) 
 {
 _putChar();
-return 0;
+return (0);
 }

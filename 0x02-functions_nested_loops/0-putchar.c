@@ -31,5 +31,3 @@ _putchar('r');
 _putchar('\n');
 return (0);
 }
-
-/* End of file */

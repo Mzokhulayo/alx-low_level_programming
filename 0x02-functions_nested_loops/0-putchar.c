@@ -19,7 +19,7 @@ return (0);
  */
 int main(void)
 {
-const char *value = "_putchar"
+const char *value = "_putchar";
 _putChar(value);
 return (0);
 }

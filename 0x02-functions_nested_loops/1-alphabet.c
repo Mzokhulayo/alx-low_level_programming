@@ -26,17 +26,17 @@ first_letter++;
 _putChar("\n");
 }
 
-/**
- * main - Entry point of the program.
- *
- * This function calls the `print_alphabet` function to print the
- * English alphabet
- * in lowercase and then returns 0 to indicate successful execution.
- *
- * Return: Always returns 0 upon successful completion.
- */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
+// /**
+//  * main - Entry point of the program.
+//  *
+//  * This function calls the `print_alphabet` function to print the
+//  * English alphabet
+//  * in lowercase and then returns 0 to indicate successful execution.
+//  *
+//  * Return: Always returns 0 upon successful completion.
+//  */
+// int main(void)
+// {
+// print_alphabet();
+// return (0);
+// }

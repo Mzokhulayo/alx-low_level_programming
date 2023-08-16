@@ -20,7 +20,7 @@ char letter_string[2] = {first_letter, '\0'}; // Convert character to null-termi
 _putChar(letter_string);
 first_letter++;
 }
-_putChar('\n');
+_putChar("\n");
 }
 
 /**

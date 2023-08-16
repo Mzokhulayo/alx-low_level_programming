@@ -1,13 +1,35 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
- * _putChar - Prints a null-terminated string followed by a newline character
- * to the standard output.
- * @str: Pointer to the null-terminated string to be printed.
- * Return: Always returns 0 to indicate successful execution.
+ * _putchar - Prints a character to stdout.
+ * @c: The character to be printed.
+ *
+ * Return: On success, 1 is returned.
+ * On error, -1 is returned.
  */
-int _putChar(const char *str)
+int _putchar(char c)
 {
-printf("%s\n", str);
+return (putchar(c));
+}
+
+/**
+ * main - Entry point of the program.
+ *
+ * Return: Always 0 (Success).
+ */
+int main(void)
+{
+
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
+
+/* End of file */

@@ -19,7 +19,7 @@ char letter_string[2];
 while (first_letter <= 'z')
 {
 letter_string[0] = first_letter;
-letter_string[1] = '\O';
+letter_string[1] = '\0';
 _putChar(letter_string);
 first_letter++;
 }

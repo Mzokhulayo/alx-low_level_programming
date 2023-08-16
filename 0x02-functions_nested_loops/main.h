@@ -1,5 +1,5 @@
-// #ifndef MAIN_H
-// #define MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  * Prints a null-terminated string followed by a newline character to the standard output.
@@ -22,4 +22,4 @@ int _putChar(const char *str);
  */
 void print_alphabet(void);
 
-// #endif /* MAIN_H */
+#endif /* MAIN_H */

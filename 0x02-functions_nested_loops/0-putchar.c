@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * _putChar - Prints a null-terminated string followed by a newline character
  * to the standard output.

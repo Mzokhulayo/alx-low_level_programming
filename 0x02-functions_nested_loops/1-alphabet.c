@@ -17,7 +17,7 @@ char first_letter = 'a';
 while (first_letter <= 'z')
 {
 char letter_string[2] = {first_letter, '\0'}; // Convert character to null-terminated string
-_putChar(first_letter);
+_putChar(letter_string);
 first_letter++;
 }
 _putChar('\n');

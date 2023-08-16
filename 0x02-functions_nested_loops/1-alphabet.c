@@ -14,9 +14,12 @@
 void print_alphabet(void)
 {
 char first_letter = 'a';
+char letter_string[2];
+
 while (first_letter <= 'z')
 {
-char letter_string[2] = {first_letter, '\0'}; // Convert character to null-terminated string
+letter_string[0] = first_letter;
+letter_string[1] = '\O';
 _putChar(letter_string);
 first_letter++;
 }

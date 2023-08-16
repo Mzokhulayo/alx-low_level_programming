@@ -16,6 +16,7 @@ void print_alphabet(void)
 char first_letter = 'a';
 while (first_letter <= 'z')
 {
+char letter_string[2] = {first_letter, '\0'}; // Convert character to null-terminated string
 _putChar(first_letter);
 first_letter++;
 }

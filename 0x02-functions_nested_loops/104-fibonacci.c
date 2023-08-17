@@ -19,14 +19,13 @@ for (i = 3; i <= 98; i++)
 {
 temp = j + k;
 printf("%lu", temp);
-
 if (i < 98)
 printf(", ");
-j=k;
-k=temp;
-printf("\n");
-
+j = k;
+k = temp;
 }
+printf("\n");
 return (0);
 }
+
 

@@ -6,26 +6,26 @@
   *
   * Return: empty
   */
-void print_square(int n)
+void print_square(int side_lenght)
 {
-int x;
-int y;
+int row;
+int column;
 
-if (n <= 0)
+if (side_lenght <= 0)
 {
 _putchar('\n');
 }
 else
 {
 
-for (x = 0; x < n; x++)
+for (row = 0; row < side_lenght; row++)
 {
-for (y = 0; y < n; y++)
+for (column = 0; column < side_lenght; column++)
 {
-_putchar(35);
+_putchar('#');
 
+}
 _putchar('\n');
 }
-	}
 }
 }

@@ -11,13 +11,15 @@
 
 int main(void)
 {
-long x = 612852475143;
-long max_prime_factor = 2;
+unsigned long x = 612852475143;
+unsigned long max_prime_factor = 2;
+unsigned long i;
 while (x % 2 == 0)
 {
 x /= 2;
 }
-for (long i = 3; i <= sqrt(x); i += 2)
+
+for (i = 3; i <= sqrt(x); i += 2)
 {
 while (x % i == 0)
 {
@@ -29,7 +31,7 @@ if (x > 2)
 {
 max_prime_factor = x;
 }
-printf("%ld\n", max_prime_factor);
+printf("%lu\n", max_prime_factor);
 return (0);
 }
 

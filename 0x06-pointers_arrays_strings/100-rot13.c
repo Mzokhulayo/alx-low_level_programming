@@ -1,18 +1,28 @@
 #include "myHeader.h"
 #include <stdio.h>
 
-char *rot13(char *s) {
-    char *start = s;
-    char letter;
+/**
+ * rot13 - Encodes a string using ROT13 cipher.
+ * @s: The input string to be encoded.
+ *
+ * Return: A pointer to the encoded string.
+ */
 
-    while (*s) {
-        if ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z')) {
-            letter = (*s <= 'Z') ? 'A' : 'a';
-            *s = ((*s - letter + 13) % 26) + letter;
-        }
-        s++;
-    }
+char *rot13(char *s)
+{
+char *start = s;
+char letter;
 
-    return start;
+while (*s)
+{
+if ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z'))
+{
+letter = (*s <= 'Z') ? 'A' : 'a';
+*s = ((*s - letter + 13) % 26) + letter;
+}
+s++;
+}
+
+return (start);
 }
 

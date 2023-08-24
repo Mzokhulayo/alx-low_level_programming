@@ -1,19 +1,18 @@
 #include "myHeader.h"
 #include <stdio.h>
 
-char *rot13(char *input) {
-    char *output = input;
+char *rot13(char *s) {
+    char *start = s;
+    char letter;
 
-    for (; *input != '\0'; input++) {
-        char original = *input;
-        char offset = (original >= 'A' && original <= 'Z') ? 'A' : (original >= 'a' && original <= 'z') ? 'a' : 0;
-        
-        if (offset != 0) {
-            char rotated = (original - offset + 13) % 26 + offset;
-            *input = rotated;
+    while (*s) {
+        if ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z')) {
+            letter = (*s <= 'Z') ? 'A' : 'a';
+            *s = ((*s - letter + 13) % 26) + letter;
         }
+        s++;
     }
 
-    return output;
+    return start;
 }
 

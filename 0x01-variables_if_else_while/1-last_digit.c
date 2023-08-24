@@ -14,12 +14,12 @@ int main(void)
 {
     int n;
 
-    srand(time(0)); // Seed the random number generator with current time
-    n = rand(); // Generate a random number
+    srand(time(0));
+    n = rand();
 
     printf("Last digit of %d is ", n);
 
-    int lastDigit = n % 10; // Calculate the last digit of the number
+    int lastDigit = n % 10;
 
     if (lastDigit > 5)
     {

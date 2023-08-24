@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "myHead.h"
 
 /**
   * _puts - Prints a string

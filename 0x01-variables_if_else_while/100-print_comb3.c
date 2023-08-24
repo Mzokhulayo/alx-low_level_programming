@@ -9,33 +9,24 @@
  *
  * Return: Always 0 (success)
  */
+
 int main(void)
 {
-int i = 0;
+int i = 1;
+
 while (i < 100)
-{
-int j = i + 1;
-while (j < 100)
 {
 putchar(i / 10 + '0');
 putchar(i % 10 + '0');
-putchar(',');
-putchar(' ');
-putchar(j / 10 + '0');
-putchar(j % 10 + '0');
 
-if (i < 98)
+if (i < 89)
 {
 putchar(',');
 putchar(' ');
 }
 
-j++;
-
-if (j % 10 == 0)
-j += 10 - 1;
-}
 i++;
+
 
 if (i % 10 == 0)
 i += 10 - 1;
@@ -45,4 +36,3 @@ putchar('\n');
 
 return (0);
 }
-

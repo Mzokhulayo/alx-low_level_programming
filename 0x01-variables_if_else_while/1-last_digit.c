@@ -14,8 +14,8 @@ int main(void)
 {
     int n;
 
-    srand(time(0)); // Seed the random number generator with current time
-    n = rand() - RAND_MAX / 2; // Generate a random number between -RAND_MAX/2 and RAND_MAX/2
+    srand(time(0));
+    n = rand() - RAND_MAX / 2;
 
     printf("Last digit of %d is %d and is ", n, n % 10);
 

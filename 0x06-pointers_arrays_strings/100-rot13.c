@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * replace_rot13 - Replaces a character with its ROT13 counterpart.
- * @c: The character to be replaced.
+ * rot13 - Encodes a string using the ROT13 cipher.
+ * @s: The input string to be encoded.
  *
- * Return: The ROT13 version of the character, or the original character if not in the lookup.
+ * Return: A pointer to the encoded string.
  */
 
 char *rot13(char *s)

@@ -9,23 +9,27 @@
  *
  * Return: Always 0 (Success).
  */
-int main(void)
-{
-unsigned long int i, j, k, temp;
-j = 1;
-k = 2;
-printf("%lu, %lu, ", j, k);
-for (i = 3; i <= 98; i++)
-{
-temp = j + k;
-printf("%lu", temp);
-if (i < 98)
+int main() {
+unsigned int a = 1;
+unsigned int b = 2;
+
+printf("%u, %u, ", a, b);
+
+for (unsigned int i = 3; i <= 98; ++i) {
+unsigned int c = a + b;
+printf("%u", c);
+
+if (i < 98) {
 printf(", ");
-j = k;
-k = temp;
 }
+
+a = b;
+b = c;
+}
+
 printf("\n");
-return (0);
+
+return 0;
 }
 
 

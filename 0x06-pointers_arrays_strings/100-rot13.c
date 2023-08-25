@@ -7,22 +7,19 @@
  *
  * Return: A pointer to the encoded string.
  */
-
 char *rot13(char *s)
 {
-char *start = s;
-char letter;
+    char *start = s;
+    int i;
 
-while (*s)
-{
-if ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z'))
-{
-letter = (*s <= 'Z') ? 'A' : 'a';
-*s = ((*s - letter + 13) % 26) + letter;
-}
-s++;
-}
+    for (i = 0; s[i]; i++)
+    {
+        if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+        {
+            char letter = (s[i] <= 'Z') ? 'A' : 'a';
+            s[i] = ((s[i] - letter + 13) % 26) + letter;
+        }
+    }
 
-return (start);
+    return (start);
 }
-

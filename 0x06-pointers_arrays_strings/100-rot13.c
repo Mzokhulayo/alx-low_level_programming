@@ -2,35 +2,46 @@
 #include <stdio.h>
 
 /**
- * rot13 - Encodes a string using ROT13 cipher.
- * @s: The input string to be encoded.
+ * replace_rot13 - Replaces a character with its ROT13 counterpart.
+ * @c: The character to be replaced.
  *
- * Return: A pointer to the encoded string.
+ * Return: The ROT13 version of the character, or the original
+ * character if not in the lookup.
+ */
+char replace_rot13(char c)
+{
+char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+int j;
+
+for (j = 0; j <= 51; j++)
+{
+if (c == a[j])
+{
+return (rot[j]);
+}
+}
+return (c);
+}
+
+/**
+ * rot13 - Change letters to ROT13.
+ * @s: The string to be encoded.
+ *
+ * Return: String with all letters in ROT13.
  */
 char *rot13(char *s)
 {
-char *start = s;
-int i;
+int i = 0;
 
-for (i = 0; s[i]; i++)
+while (*(s + i) != '\0')
 {
-if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
 {
-char letter;
-
-if (s[i] >= 'A' && s[i] <= 'Z')
-{
-letter = 'A';
+s[i] = replace_rot13(s[i]);
 }
-else
-{
-letter = 'a';
+i++;
 }
-
-s[i] = ((s[i] - letter + 13) % 26) + letter;
-}
-}
-
-return (start);
+return (s);
 }
 

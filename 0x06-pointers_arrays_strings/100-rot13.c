@@ -19,9 +19,13 @@ if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
 char letter;
 
 if (s[i] >= 'A' && s[i] <= 'Z')
+{
 letter = 'A';
+}
 else
+{
 letter = 'a';
+}
 
 s[i] = ((s[i] - letter + 13) % 26) + letter;
 }

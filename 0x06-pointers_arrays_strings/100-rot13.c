@@ -1,11 +1,13 @@
 #include "myHeader.h"
 #include <stdio.h>
+
 /**
- * rot13 - change letters to ROT13.
- * @s: analized string.
+ * replace_rot13 - Replaces a character with its ROT13 counterpart.
+ * @c: The character to be replaced.
  *
- * Return: String with all letters in ROT13 base.
+ * Return: The ROT13 version of the character, or the original character if not in the lookup.
  */
+
 char *rot13(char *s)
 {
 char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";

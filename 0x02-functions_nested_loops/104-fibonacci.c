@@ -14,8 +14,9 @@ int main() {
 unsigned int a = 1;
 unsigned int b = 2;
 
-unsigned int i;
-for (i = 3; i <= 98; ++i) {
+printf("1, 2, ");
+
+for (unsigned int i = 3; i <= 98; ++i) {
 unsigned int c = a + b;
 printf("%u", c);
 

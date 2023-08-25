@@ -12,26 +12,23 @@
 
 int main(void)
 {
-int i = 1;
+int tens;
+int ones;
 
-while (i < 100)
+for (tens = 0; tens <= 9; tens++)
 {
-putchar(i / 10 + '0');
-putchar(i % 10 + '0');
+for (ones = tens + 1; ones <= 9; ones++)
+{
+putchar(tens + '0');
+putchar(ones + '0');
 
-if (i < 89)
+if (tens < 8)
 {
 putchar(',');
 putchar(' ');
 }
-
-i++;
-
-
-if (i % 10 == 0)
-i += 10 - 1;
 }
-
+}
 putchar('\n');
 
 return (0);

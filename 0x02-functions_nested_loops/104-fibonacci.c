@@ -10,18 +10,21 @@
  * Return: Always 0 (Success).
  */
 
-int main() {
+int main(void)
+{
 unsigned int a = 1;
 unsigned int b = 2;
 unsigned int i;
 
 printf("1, 2, ");
 
-for (i = 3; i <= 98; ++i) {
+for (i = 3; i <= 98; ++i)
+{
 unsigned int c = a + b;
 printf("%u", c);
 
-if (i < 98) {
+if (i < 98)
+{
 printf(", ");
 }
 
@@ -31,6 +34,6 @@ b = c;
 
 printf("\n");
 
-return 0;
+return (0);
 }
 

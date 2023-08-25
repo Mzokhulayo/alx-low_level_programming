@@ -16,7 +16,8 @@ unsigned int b = 2;
 
 printf("1, 2, ");
 
-for (unsigned int i = 3; i <= 98; ++i) {
+unsigned int i;
+for (i = 3; i <= 98; ++i) {
 unsigned int c = a + b;
 printf("%u", c);
 
@@ -32,5 +33,4 @@ printf("\n");
 
 return 0;
 }
-
 

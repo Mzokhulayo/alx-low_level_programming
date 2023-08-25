@@ -1,47 +1,29 @@
 #include "myHeader.h"
 #include <stdio.h>
-
 /**
- * replace_rot13 - Replaces a character with its ROT13 counterpart.
- * @c: The character to be replaced.
+ * rot13 - change letters to ROT13.
+ * @s: analized string.
  *
- * Return: The ROT13 version of the character, or the original
- * character if not in the lookup.
- */
-char replace_rot13(char c)
-{
-char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-int j;
-
-for (j = 0; j <= 51; j++)
-{
-if (c == a[j])
-{
-return (rot[j]);
-}
-}
-return (c);
-}
-
-/**
- * rot13 - Change letters to ROT13.
- * @s: The string to be encoded.
- *
- * Return: String with all letters in ROT13.
+ * Return: String with all letters in ROT13 base.
  */
 char *rot13(char *s)
 {
+char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 int i = 0;
+int j;
 
 while (*(s + i) != '\0')
 {
-if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
+for (j = 0; j <= 51; j++)
 {
-s[i] = replace_rot13(s[i]);
+if (*(s + i) == a[j])
+{
+*(s + i) = rot[j];
+break;
+}
 }
 i++;
 }
 return (s);
 }
-

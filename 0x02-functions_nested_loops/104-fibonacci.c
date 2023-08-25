@@ -4,7 +4,8 @@
 /**
  * main - Entry point of the program.
  *
- * This program calculates and prints the first 98 Fibonacci numbers starting with 1 and 2.
+ * This program calculates and prints the first 98 Fibonacci numbers 
+ * starting with 1 and 2.
  * The numbers are separated by commas and spaces, and are printed
  * followed by a newline.
  *

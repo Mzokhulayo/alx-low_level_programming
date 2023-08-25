@@ -9,6 +9,7 @@
  *
  * Return: Always 0 (Success).
  */
+
 int main() {
 unsigned int a = 1;
 unsigned int b = 2;
